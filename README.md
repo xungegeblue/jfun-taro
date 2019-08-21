@@ -100,6 +100,11 @@ $ taro build --type rn --watch
 [Taro官网地址：https://taro.aotu.io/](https://taro.aotu.io/)
 [dva官网地址：https://dvajs.com/guide/](https://dvajs.com/guide/)
 
+
+# mock数据
+
+https://www.easy-mock.com/project/5d5aa417fc79a5287e5676cf
+
 # 参考项目
 Github地址：[https://github.com/Duanruilong/taro_dva_typescript](https://github.com/Duanruilong/taro_dva_typescript)
 

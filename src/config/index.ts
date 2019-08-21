@@ -4,12 +4,12 @@
  * https://www.easy-mock.com/mock/5d38269ffb233553ab0d10ad/getlist
 */
 
-export const ONLINEHOST = 'https://www.easy-mock.com/mock/5d38269ffb233553ab0d10ad';
+export const ONLINEHOST = 'https://www.easy-mock.com/mock/5d5aa417fc79a5287e5676cf/example';
 
 /** 
  * mock 接口
  * */ 
-export const MOCKHOST = 'https://www.easy-mock.com/mock/5d38269ffb233553ab0d10ad';
+export const MOCKHOST = 'https://www.easy-mock.com/mock/5d5aa417fc79a5287e5676cf/example';
 
 /** 
  * 是否mock

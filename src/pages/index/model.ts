@@ -2,34 +2,31 @@
 import * as indexApi from './service';
 
 export default {
-  namespace: 'index',
-  state: {
-    data:[],
-    v:'1.0',
-  },
-
-  effects: {
-    *getList({ payload },{call, put}){
-      const { error, result} = yield call(indexApi.getList,{
-        ...payload
-      })
-      console.log('数据接口返回',result);
-      
-      if (!error) {
-        yield put({
-          type: 'save',
-          payload: {
-            data:result.data
-          },
-        })
-      }
-    }
-  },
-
-  reducers: {
-    save(state, { payload }) {
-      return { ...state, ...payload };
+    namespace: 'index',
+    state: {
+        banner:[]
     },
-  }
+
+    effects: {
+        *getBanner(_,{call, put}) {
+            const {data} = yield call(indexApi.getBanner)
+            console.log('banner--->')
+            console.log(data)
+            yield put({
+                type: 'save',
+                payload: {
+                    banner : data.banner
+                },
+            })
+        }
+    },
+
+    reducers: {
+        save(state, {payload}) {
+            console.log('layload', payload)
+            return {...state, ...payload};
+        },
+    }
 
 }
+

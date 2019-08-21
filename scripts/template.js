@@ -22,8 +22,8 @@ const indexTep = `
     // import { connect } from '@tarojs/redux'
     // import Api from '../../utils/request'
     // import Tips from '../../utils/tips'
-    import { ${capPirName}Props, ${capPirName}State } from './${dirName}.interface'
-    import './${dirName}.scss'
+    import { ${capPirName}Props, ${capPirName}State } from './index.interface'
+    import './index.scss'
     // import {  } from '../../components'
 
     // @connect(({ ${dirName} }) => ({
@@ -122,12 +122,12 @@ export interface ${capPirName}Props {}
 fs.mkdirSync(`./src/pages/${dirName}`); // mkdir $1
 process.chdir(`./src/pages/${dirName}`); // cd $1
 
-fs.writeFileSync(`${dirName}.tsx`, indexTep); //tsx
-fs.writeFileSync(`${dirName}.scss`, scssTep); // scss
-fs.writeFileSync('config.ts', configTep); // config
+fs.writeFileSync(`index.tsx`, indexTep); //tsx
+fs.writeFileSync(`index.scss`, scssTep); // scss
+// fs.writeFileSync('config.ts', configTep); // config
 fs.writeFileSync('service.ts', serviceTep); // service
 fs.writeFileSync('model.ts', modelTep); // model
-fs.writeFileSync(`${dirName}.interface.ts`, interfaceTep); // interface
+fs.writeFileSync(`index.interface.ts`, interfaceTep); // interface
 process.exit(0);
 
 

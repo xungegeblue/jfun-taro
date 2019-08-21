@@ -1,6 +1,6 @@
-import Api from '../../utils/request'
+import JfunRequest from "../../utils/request";
 
-export const getList = (data) => {
-  return Api.getList(data)
+export const getBanner = () => {
+    return JfunRequest.getRequest('/banner')
 }
-  
+

@@ -43,6 +43,7 @@ class JfunRequest {
      * @param method
      */
     static conbineOptions(opts, data: Datas, method?: Methohs): Options {
+        console.log('opts',opts)
         typeof opts === 'string' && (opts = {url: opts})
         let baseUrl = ISMOCK ? MOCKHOST : ONLINEHOST
 

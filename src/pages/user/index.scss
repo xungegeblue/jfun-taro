@@ -1,0 +1,36 @@
+@import "../../assets/scss/variables";
+
+.user-wrap {
+  .user-wrap-main {
+    padding-top: 40px;
+    align-content: center;
+    padding-left: 30px;
+
+    .user-wrap-left {
+      padding-left: 30px;
+
+      .login_txt {
+        margin-top: 19px;
+        color: gray;
+        font-size: 40px;
+      }
+    }
+
+    .logo_img {
+      text-align: center;
+      width: 215px;
+      height: 215px;
+    }
+
+
+  }
+
+  .user-nav {
+    margin-top: 40px;
+    background: #f9f9f9;
+  }
+
+  .user-subject{
+    margin-top: 40px;
+  }
+}

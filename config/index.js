@@ -70,7 +70,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
-    esnextModules: ['taro-f2'],
+    esnextModules: ['taro-ui'],
     module: {
       postcss: {
         autoprefixer: {

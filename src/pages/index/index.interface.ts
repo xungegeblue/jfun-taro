@@ -1,9 +1,10 @@
 /**
  * index.state 参数类型
+ *
+ * @export
  * @interface IndexState
  */
 export interface IndexState {
-
 }
 
 /**
@@ -13,13 +14,7 @@ export interface IndexState {
  * @interface IndexProps
  */
 export interface IndexProps {
-    data ?: Array<DataInterface>
-}
-
-export interface DataInterface {
-    des:string,
-    lunar:string,
-    thumbnail_pic_s:string,
-    title:string,
-    _id:string
+    banner: Array<{
+        image_src:string
+    }>
 }
